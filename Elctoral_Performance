@@ -28,5 +28,5 @@ votes <- elections_pop$vote_share
 elections_pop %>% 
   ggplot(mapping = aes(year, votes)) + 
      geom_col(mapping =  aes(fill = party_name_english, group = party_name_english), width=1000, alpha=0.8) + ylim(0, 10) + facet_wrap(~ party_name_english) +
-     labs(y="vote shares", fill = "Party Type", title = "Shares of far-right parties' vote shares in Begium") +
+     labs(y="vote shares", fill = "Party Type", title = "Shares of far-right parties' vote shares in Austria") +
      theme_minimal()
